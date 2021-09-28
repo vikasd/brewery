@@ -9,27 +9,27 @@ import Foundation
 
 struct BeerModel: Decodable {
     
-    let id: Int
-    let name: String
-    let tagline: String
-    let firstBrewed: String
-    let description: String
+    let id: Int?
+    let name: String?
+    let tagline: String?
+    let firstBrewed: String?
+    let description: String?
     let imageURL: String?
-    let abv: Float
-    let ibu: Float
-    let targetFG: Float
-    let targetOG: Float
-    let ebc: Float
-    let srm: Float
-    let ph: Float
-    let attenuationLevel: Float
-    let volume: Volume
-    let boilVolume: Volume
-    let method: Method
-    let ingredients: Ingredients
-    let foodPairings: [String]
-    let brewersTips: String
-    let contributedBy: String
+    let abv: Float?
+    let ibu: Float?
+    let targetFG: Float?
+    let targetOG: Float?
+    let ebc: Float?
+    let srm: Float?
+    let ph: Float?
+    let attenuationLevel: Float?
+    let volume: Volume?
+    let boilVolume: Volume?
+    let method: Method?
+    let ingredients: Ingredients?
+    let foodPairings: [String]?
+    let brewersTips: String?
+    let contributedBy: String?
 }
 
 

@@ -9,9 +9,9 @@ import Foundation
 
 struct Ingredients: Decodable {
     
-    let malt: [Malt]
-    let hops: [Hops]
-    let yeast: String
+    let malt: [Malt]?
+    let hops: [Hops]?
+    let yeast: String?
 }
 
 
@@ -19,16 +19,16 @@ struct Ingredients: Decodable {
 // MARK: Malt
 struct Malt: Decodable {
  
-    let name: String
-    let amount: Weight
+    let name: String?
+    let amount: Weight?
 }
 
 
 // MARK: Hops
 struct Hops: Decodable {
     
-    let name: String
-    let amount: Weight
-    let add: String
-    let attribute: String
+    let name: String?
+    let amount: Weight?
+    let add: String?
+    let attribute: String?
 }

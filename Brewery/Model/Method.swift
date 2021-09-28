@@ -30,7 +30,7 @@ extension Method {
 struct Mash: Decodable {
     
     let temperature: Temperature
-    let duration: Int
+    let duration: Int?
 }
 
 extension Mash {
