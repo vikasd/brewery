@@ -25,10 +25,10 @@ class BeerListTableViewCell: UITableViewCell {
                          title: String?,
                          tagline: String?) {
         
-        if let url = imageURL,
-           let data = try? Data(contentsOf: url) {
-            itemImageView.image = UIImage(data: data)
-        }
+//        if let url = imageURL,
+//           let data = try? Data(contentsOf: url) {
+//            itemImageView.image = UIImage(data: data)
+//        }
         
         self.titleLabel.text = title
         self.taglineLabel.text = tagline

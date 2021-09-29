@@ -54,4 +54,13 @@ class BeerListTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let beerViewModel = beerListViewModel.beerItem(at: indexPath.row)
+        
+        let detailViewController = BeerDetailsViewController(beerViewModel)
+        
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
